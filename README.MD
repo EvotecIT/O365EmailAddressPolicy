@@ -48,7 +48,7 @@ That's it. Whenever there's a new version, you run the command, and you can enjo
 
 ```powershell
 # will give przemyslawklys@evotec.xyz
-Get-EmailAddressPolicy -FirstName 'Przemysław' -LastName 'Kłys' -EmailTemplate "%g%s@evotec.xyz" -ToLower
+Get-EmailAddress -FirstName 'Przemysław' -LastName 'Kłys' -EmailTemplate "%g%s@evotec.xyz" -ToLower
 ```
 
 ```powershell
@@ -61,5 +61,5 @@ $EmailTemplate = @(
     "%g@company.pl"     # will give przemyslaw@company.pl
 )
 
-Get-EmailAddressPolicy -FirstName 'Przemysław' -LastName 'Kłys' -EmailTemplate $EmailTemplate -ToLower
+Get-EmailAddress -FirstName 'Przemysław' -LastName 'Kłys' -EmailTemplate $EmailTemplate -ToLower
 ```
