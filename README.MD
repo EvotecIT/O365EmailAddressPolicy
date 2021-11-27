@@ -1,5 +1,5 @@
 ﻿<p align="center">
-  <a href="https://dev.azure.com/evotecpl/O365EmailAddressPolicy/_build/latest?definitionId=3"><img src="https://dev.azure.com/evotecpl/O365EmailAddressPolicy/_apis/build/status/EvotecIT.O365EmailAddressPolicy"></a>
+  <a href="https://dev.azure.com/evotecpl/O365EmailAddressPolicy/_build/latest?definitionId=18"><img src="https://dev.azure.com/evotecpl/O365EmailAddressPolicy/_apis/build/status/EvotecIT.O365EmailAddressPolicy"></a>
   <a href="https://www.powershellgallery.com/packages/O365EmailAddressPolicy"><img src="https://img.shields.io/powershellgallery/v/O365EmailAddressPolicy.svg"></a>
   <a href="https://www.powershellgallery.com/packages/O365EmailAddressPolicy"><img src="https://img.shields.io/powershellgallery/vpre/O365EmailAddressPolicy.svg?label=powershell%20gallery%20preview&colorB=yellow"></a>
   <a href="https://github.com/EvotecIT/O365EmailAddressPolicy"><img src="https://img.shields.io/github/license/EvotecIT/O365EmailAddressPolicy.svg"></a>
