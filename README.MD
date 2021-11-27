@@ -20,8 +20,7 @@
 
 # O365EmailAddressPolicy - PowerShell Module
 
-**O365EmailAddressPolicy** PowerShell module replicates Exchange On-Premise functionality allowing cloud only environments to have their own email address policy.
-
+**O365EmailAddressPolicy** PowerShell module replicates Exchange On-Premise functionality when it comes to Email Address Policy allowing cloud-only environments. Office 365 doesn't provide an option to autogenerate email addresses for users. This module enables the creation of email addresses for users based on their first name and last name.
 
 ## Installing
 
