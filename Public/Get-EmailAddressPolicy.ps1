@@ -13,14 +13,14 @@
     Provide last name of the user/account
 
     .PARAMETER EmailTemplate
-    Provide one or more email templates using string similar to what Exchange On-Premises uses.
+    Provide one or more email templates using string similar to what Exchange On-Premises uses. Following options are available (more or less)
 
     - "%g.%s@evotec.xyz"  # would give przemyslaw.klys@evotec.xyz
     - "%1g.%s@evotec.xyz" # would give p.klys@evotec.xyz
     - "%1g%s@evotec.xyz"  # would give pklys@evotec.xyz
     - "%3g.%s@evotec.xyz" # would give prz.klys@evotec.xyz
     - "%g.%1s@evotec.xyz" # would give przemyslaw.k@evotec.xyz
-    - "%g@company.pl"         # would give przemyslaw@company.pl
+    - "%g@company.pl"     # would give przemyslaw@company.pl
 
 
     .PARAMETER ToLowerCase
@@ -33,7 +33,7 @@
         "%1g%s@evotec.xyz"  # would give pklys@evotec.xyz
         "%3g.%s@evotec.xyz" # would give prz.klys@evotec.xyz
         "%g.%1s@evotec.xyz" # would give przemyslaw.k@evotec.xyz
-        "%g@company.pl"         # would give przemyslaw@company.pl
+        "%g@company.pl"     # would give przemyslaw@company.pl
     )
 
     Get-EmailAddressPolicy -FirstName 'Przemysław' -LastName 'Kłys' -EmailTemplate $EmailTemplate -ToLower
