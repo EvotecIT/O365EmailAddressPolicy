@@ -1,4 +1,4 @@
-﻿jobs:
+jobs:
   - job: Build_Windows
     pool:
       vmImage: windows-latest
