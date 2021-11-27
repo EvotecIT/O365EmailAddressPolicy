@@ -1,4 +1,4 @@
-﻿function Get-EmailAddressPolicy {
+﻿function Get-EmailAddress {
     <#
     .SYNOPSIS
     Generates email address based on given EmailTemplate policy similar to what Exchange On-Premises uses.
@@ -22,7 +22,6 @@
     - "%g.%1s@evotec.xyz" # would give przemyslaw.k@evotec.xyz
     - "%g@company.pl"     # would give przemyslaw@company.pl
 
-
     .PARAMETER ToLowerCase
     Forces generated email addresses to lower case.
 
@@ -36,7 +35,7 @@
         "%g@company.pl"     # would give przemyslaw@company.pl
     )
 
-    Get-EmailAddressPolicy -FirstName 'Przemysław' -LastName 'Kłys' -EmailTemplate $EmailTemplate -ToLower
+    Get-EmailAddress -FirstName 'Przemysław' -LastName 'Kłys' -EmailTemplate $EmailTemplate -ToLower
 
     .NOTES
     General notes
@@ -66,7 +65,7 @@
             $FullEmail = [regex]::Replace($FullEmail, '.%(\d*)s', { param($m) Get-NameSection -Name $LastName -Number $m.Groups[1].Value })
         }
         if ($FullEmail.StartsWith('@')) {
-            Write-Warning -Message "Get-EmailAddressPolicy - Couldn't generate email ($FullEmail) from template ($Template). Skipping"
+            Write-Warning -Message "Get-EmailAddress - Couldn't generate email ($FullEmail) from template ($Template). Skipping"
             continue
         }
         if ($ToLowerCase) {
