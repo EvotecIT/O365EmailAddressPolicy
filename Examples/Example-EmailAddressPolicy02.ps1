@@ -4,4 +4,4 @@ $EmailTemplate = @(
     "%g%s@evotec.xyz"  # would give przemyslawklys@evotec.xyz
 )
 
-Get-EmailAddressPolicy -FirstName 'Przemysław' -LastName 'Kłys' -EmailTemplate $EmailTemplate -ToLower
+Get-EmailAddress -FirstName 'Przemysław' -LastName 'Kłys' -EmailTemplate $EmailTemplate -ToLower

@@ -6,9 +6,9 @@ $EmailTemplate = @(
     "%1g%s@evotec.xyz"  # would give pklys@evotec.xyz
     "%3g.%s@evotec.xyz" # would give prz.klys@evotec.xyz
     "%g.%1s@evotec.xyz" # would give przemyslaw.k@evotec.xyz
-    "%g@company.pl"         # would give przemyslaw@company.pl
+    "%g@company.pl"     # would give przemyslaw@company.pl
 )
 
-Get-EmailAddressPolicy -FirstName 'Przemysław' -LastName 'Kłys' -EmailTemplate $EmailTemplate -ToLower
-#Get-EmailAddressPolicy -FirstName 'Adam' -LastName '' -EmailTemplate $EmailTemplate -ToLower
-#Get-EmailAddressPolicy -LastName 'Kolendo' -EmailTemplate $EmailTemplate -ToLower
+Get-EmailAddress -FirstName 'Przemysław' -LastName 'Kłys' -EmailTemplate $EmailTemplate -ToLower
+#Get-EmailAddress -FirstName 'Adam' -LastName '' -EmailTemplate $EmailTemplate -ToLower
+#Get-EmailAddress -LastName 'Kolendo' -EmailTemplate $EmailTemplate -ToLower
