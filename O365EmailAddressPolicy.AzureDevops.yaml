@@ -1,25 +1,25 @@
 jobs:
-  - job: Build_Windows
+  - job: Windows
     pool:
       vmImage: windows-latest
     steps:
       - powershell: |
-          .\PSSharedGoods.Tests.ps1
+          .\O365EmailAddressPolicy.Tests.ps1
         displayName: "Run Windows - PowerShell 5.1"
       - pwsh: |
-          .\PSSharedGoods.Tests.ps1
+          .\O365EmailAddressPolicy.Tests.ps1
         displayName: "Run Windows - PowerShell 7"
-  - job: Build_Ubuntu
+  - job: Ubuntu
     pool:
       vmImage: ubuntu-latest
     steps:
       - pwsh: |
-          .\PSSharedGoods.Tests.ps1
+          .\O365EmailAddressPolicy.Tests.ps1
         displayName: "Run Ubuntu - PowerShell 7"
-  - job: Build_PSCore_MacOS1013
+  - job: MacOS
     pool:
       vmImage: macOS-latest
     steps:
       - pwsh: |
-          .\PSSharedGoods.Tests.ps1
+          .\O365EmailAddressPolicy.Tests.ps1
         displayName: "Run MacOs - PowerShell 7"
