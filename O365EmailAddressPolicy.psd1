@@ -4,7 +4,7 @@
     CmdletsToExport      = @()
     CompanyName          = 'Evotec'
     CompatiblePSEditions = @('Desktop', 'Core')
-    Copyright            = '(c) 2020 - 2021 Przemyslaw Klys @ Evotec. All rights reserved.'
+    Copyright            = '(c) 2011 - 2021 Przemyslaw Klys @ Evotec. All rights reserved.'
     Description          = 'Office 365 Email Address Policy'
     FunctionsToExport    = 'Get-EmailAddressPolicy'
     GUID                 = '303e4cc7-2b05-469a-b700-ab84569a5464'
