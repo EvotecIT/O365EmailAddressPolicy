@@ -7,13 +7,13 @@
     Returns the first $num characters of a name, unless $num is 0, missing or longer than the name, then returns the entire name
 
     .PARAMETER Name
-    Parameter description
+    Provide the name to be parsed
 
     .PARAMETER Number
-    Parameter description
+    Provide number of chars to trim to
 
     .EXAMPLE
-    An example
+    Get-NameSection -Name 'przemyslaw' -Number 5
 
     .NOTES
     General notes
