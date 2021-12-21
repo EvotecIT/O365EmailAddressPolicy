@@ -24,8 +24,8 @@
         [int]$Number
     )
     if (-not $Number -or $Number -gt $Name.Length) {
-        $Name
+        $Name.Replace(" ", "")
     } else {
-        $Name.Substring(0, $Number)
+        $Name.Substring(0, $Number).Replace(" ", '')
     }
 }
