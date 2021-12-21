@@ -10,5 +10,6 @@ $EmailTemplate = @(
 )
 
 Get-EmailAddress -FirstName 'Przemysław' -LastName 'Kłys' -EmailTemplate $EmailTemplate -ToLower
-#Get-EmailAddress -FirstName 'Adam' -LastName '' -EmailTemplate $EmailTemplate -ToLower
-#Get-EmailAddress -LastName 'Kolendo' -EmailTemplate $EmailTemplate -ToLower
+Get-EmailAddress -FirstName 'Przemysław Adam' -LastName 'Kłys' -EmailTemplate $EmailTemplate -ToLower
+Get-EmailAddress -FirstName 'Adam' -LastName '' -EmailTemplate $EmailTemplate -ToLower
+Get-EmailAddress -LastName 'Kolendo' -EmailTemplate $EmailTemplate -ToLower
